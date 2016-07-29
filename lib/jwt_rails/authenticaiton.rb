@@ -1,6 +1,6 @@
 require "jwt/authentication/version"
 
-module Jwt
+module JwtRails
   module Authentication
     class JsonWebToken
       def self.encode(payload)
