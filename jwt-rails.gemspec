@@ -5,7 +5,7 @@ require 'jwt_rails/rails/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "jwt-rails"
-  spec.version       = Jwt::Rails::VERSION
+  spec.version       = JwtRails::Rails::VERSION
   spec.authors       = ["Gokul Murali"]
   spec.email         = ["gokul@mallow-tech.com"]
 
