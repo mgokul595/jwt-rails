@@ -2,6 +2,8 @@ require "jwt/rails/version"
 
 module Jwt
   module Rails
-    # Your code goes here...
+    def check(name)
+      puts 'Are you' + name + '?'
+    end
   end
 end
