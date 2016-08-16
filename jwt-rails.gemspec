@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'jwt/rails/version'
+require 'jwt_rails/authentication/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "jwt-rails"
-  spec.version       = Jwt::Rails::VERSION
+  spec.version       = JwtRails::Authentication::VERSION
   spec.authors       = ["Gokul Murali"]
   spec.email         = ["gokul@mallow-tech.com"]
 
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Write a longer description or delete this line.}
 
   # TODO: Put your gem's website or public repo URL here.
-  spec.homepage      = "Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/mgokul595/jwt-rails"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -36,4 +36,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "jwt"
 end
